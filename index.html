@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My CV</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>CV</h1>
+        <hr/>
+        <img src="zubarev_photo.jpg" width="150" height="150" alt='MyPhoto'>
+        <ul>
+            <li>Andrei Zubarev</li>
+            <li>E-mail: andreizubarev1985@gmail.com</li>
+            <li>Summary</li>
+            <li>Basic Skills:
+                <ol type = "i">
+                    <li>Language: JavaScript, HTML, CSS (preprocessors: SASS)</li>
+                    <li>Frameworks: Bootstrap, React.js (initial level)</li>
+                    <li>Deploy: GitHub</li>
+                </ol>
+            </li>
+            <li>My code examples are here:
+                <p>GitHub: https://github.com/AndreiZubarev1985</p>
+                <pre>
+                    module.exports = function multiply(first, second) {
+                        const product = Array(first.length+second.length).fill(0);
+                        for (let i = first.length; i--; null) {
+                            let carry = 0;
+                            for (let j = second.length; j--; null) {
+                                product[1+i+j] += carry + first[i]*second[j];
+                                carry = Math.floor(product[1+i+j] / 10);
+                                product[1+i+j] = product[1+i+j] % 10;
+                            }
+                            product[i] += carry;
+                            console.log(product);
+                        }
+                        if(product[0] === 0) {
+                            let result = product.shift();
+                            return product.join('');
+                        } else {
+                            return product.join('');
+                        }
+                    };
+                </pre>
+            </li>
+            <li>Education
+                <p>Professional development, courses:
+                    <ol>
+                        <li>Educcational center of HTP, Web Development (2013): HTML, CSS, JavaScript, MySql;</li>
+                        <li>HTMLAcademy: HTML, CSS basics (2019).</li>
+                    </ol>
+                </p>
+            </li>
+            <li>English language skills:
+                <p>B1 - Itermediate</p>
+            </li>
+           
+        </ul>
+    </body>
+</html>
